@@ -241,7 +241,11 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #026e6b 0%, #02494b 100%);
+}
+
+.footer-color {
+    background-image: linear-gradient(to right, #c45555 0%, #940303 100%);
 }
 
 .text-color {
@@ -257,7 +261,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #FFF0C6 0%, #FFF0C6 100%);
     opacity: 0.8;
 }
 
@@ -550,10 +554,10 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
-}
+/*.bg-cover:after {*/
+/*    -webkit-animation: rainbow 60s infinite;*/
+/*    animation: rainbow 60s infinite;*/
+/*}*/
 
 .bg-cover:before,
 .bg-cover:after {
@@ -944,6 +948,7 @@ article .article-tags .chip {
     line-height: 22px;
     color: #fff;
     border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(230, 193, 92) 0%, rgb(226, 170, 14) 100%);
 }
 
 .prev-next {
@@ -1048,6 +1053,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
+    background-image: linear-gradient(to right, rgb(230, 193, 92) 0%, rgb(226, 170, 14) 100%);
 }
 
 #artDetail .tag_share .article-tag .chip {
@@ -1058,10 +1064,11 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
-    background: #fff;
+    color: #fff;
+    /*background: #fff;*/
     border: 1px solid;
     transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(to right, rgb(230, 193, 92) 0%, rgb(226, 170, 14) 100%);
 }
 
 #artDetail .tag_share .article-tag .chip:hover {

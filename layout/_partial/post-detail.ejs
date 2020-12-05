@@ -8,13 +8,13 @@
                     <div class="article-tag">
                         <% page.tags.forEach(function(tag) { %>
                             <a href="<%- url_for(tag.path) %>">
-                                <span class="chip bg-color"><%= tag.name %></span>
+                                <span class="chip article-tag"><%= tag.name %></span>
                             </a>
                         <% }); %>
                     </div>
                     <% } else { %>
                           <div class="article-tag">
-                            <span class="chip bg-color"><%- __("notag")  %></span>
+                            <span class="chip article-tag"><%- __("notag")  %></span>
                           </div>
                     <% } %>
                 </div>
@@ -136,19 +136,21 @@
 
             <%- partial('_partial/reprint-statement') %>
 
+            <br>
+
             <div class="tag_share" style="display: block;">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     <% if (page.tags && page.tags.length) { %>
                         <div class="article-tag">
                             <% page.tags.forEach(function(tag) { %>
                                 <a href="<%- url_for(tag.path) %>">
-                                    <span class="chip bg-color"><%= tag.name %></span>
+                                    <span class="chip article-tag"><%= tag.name %></span>
                                 </a>
                             <% }); %>
                         </div>
                     <% } else { %>
                         <div class="article-tag">
-                            <span class="chip bg-color"><%- __("notag")  %></span>
+                            <span class="chip article-tag"><%- __("notag")  %></span>
                         </div>
                     <% } %>
                 </div>
