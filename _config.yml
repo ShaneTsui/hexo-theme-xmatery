@@ -42,10 +42,10 @@ menu:
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  enable: true
+  year: 2020 # 年份
+  month: 01 # 月份
+  date: 01 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -64,31 +64,34 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: true
+  enable: false
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: Love & Peace
+  text:
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
   enable: true
+  showTitle: true
   title: #非吸底模式有效
     enable: true
-    show: 听听音乐
+    show: Featured Music
+  fixed: false # 开启吸底模式
+  autoplay: false # 是否自动播放
+  theme: '#42b983'
+  loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'none' # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: false # 列表默认折叠
+  listMaxHeight: #列表最大高度
   autoHide: true    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
   id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
-  theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
   hideLrc: true     # 隐藏歌词
+
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -96,7 +99,7 @@ video:
   enable: false
   showTitle: true
   title: 精彩视频
-  url: # 必填
+  url: https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 # 必填
   pic:
   thumbnails:
   height: # 如：400
@@ -109,7 +112,7 @@ video:
 # Whether to display the title of the recommended posts
 # 是否显示推荐文章的标题
 recommend:
-  enable: true
+  enable: false
   showTitle: true
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
@@ -117,26 +120,27 @@ recommend:
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 favicon: /favicon.png
-logo: /medias/logo.png
+#logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
-indexbtn:
-  enable: true
-  name: Github
-  icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+#indexbtn:
+#  enable: true
+#  name: Github
+#  icon: fab fa-github-alt
+#  url: https://github.com/blinkfox/hexo-theme-matery
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  # qq: 1403208112
+  github: https://github.com/ShaneTsui/
+  email: shanetsui.cs@gmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  qq: #
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -147,7 +151,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
-  heading: h2, h3, h4
+  heading: h1, h2, h3, h4
   collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
@@ -160,7 +164,7 @@ code:
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
-  enable: true
+  enable: false
   title: 你的赏识是我前进的动力
   wechat: /medias/reward/wechat.png
   alipay: /medias/reward/alipay.jpg
@@ -169,8 +173,8 @@ reward:
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
-  minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
+  enable: true
+  minCharNumber: 50 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
@@ -179,7 +183,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: false
+  enable: true
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -198,20 +202,20 @@ postInfo:
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
-  enable: true
+  enable: false
 
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  career: Into Programming, Robotics and Guitar Fingerstyle
+  introduction: 不喜欢ACG的程序猿不是好的自动驾驶攻城狮
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
@@ -235,24 +239,33 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    Python:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
-    JavaScript:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 80%
-    CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 90%
-    程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+      C++:
+        background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+        percent: 70%
+      Guitar Fingerstyle:
+        background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+        percent: 60%
+#    Java:
+#      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+#      percent: 85%
+#    JavaScript:
+#      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+#      percent: 80%
+#    HTML5:
+#      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+#      percent: 80%
+#    CSS:
+#      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+#      percent: 70%
+#    SQL:
+#      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+#      percent: 90%
+#    程序设计:
+#      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
+#      percent: 75%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -260,9 +273,15 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578275196/Blog/Images/Travel/China/Beijing/Beihang/1E859466-6730-4588-9C4C-43678BC2A40F_qtd4uc.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578275206/Blog/Images/Travel/China/Beijing/Beihang/D1382F9B-D341-4C4E-BB40-1437B7990456_xkioie.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276433/Blog/Images/Travel/NorthAmerica/SanDiego/E02B3C74-CB1C-4990-95DC-FC2F8233A249_uwmzht.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276432/Blog/Images/Travel/NorthAmerica/SanDiego/86DC3EE5-2228-43FC-AC89-FD722A8A948F_dqd2mq.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276428/Blog/Images/Travel/NorthAmerica/SanDiego/BAB35124-3C5C-4EC4-9DD4-E44A799849A8_anxujv.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276400/Blog/Images/Travel/NorthAmerica/SanDiego/B661CDB4-0C07-4618-A945-94F4FE4EF4F5_bghlp7.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276413/Blog/Images/Travel/NorthAmerica/SanDiego/FC7A9D65-5C76-474E-B289-9DF1B2EB5516_xutqkb.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276415/Blog/Images/Travel/NorthAmerica/SanDiego/67595C65-084A-46CC-A00B-5FC9F9FF68D3_ovrldp.jpg
+    - https://res.cloudinary.com/shanetsui/image/upload/v1578276425/Blog/Images/Travel/NorthAmerica/SanDiego/D41B6A4E-381D-468F-B697-F7FD71D441C9_aisuzg.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -304,8 +323,8 @@ gitment:
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: shanetsui
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
@@ -379,7 +398,7 @@ changyan:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
+  enable: false
   url: https://github.com/blinkfox/hexo-theme-matery
   title: Fork Me
 
@@ -390,7 +409,7 @@ githubLink:
 # 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
-  enable: false
+  enable: true
   promptMessage: 请输入访问本文章的密码
   errorMessage: 密码错误，将返回主页！
 
@@ -566,8 +585,8 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  sub1: 飞向宇宙，浩瀚无垠
+  sub2: To infinity, and beyond.
 
 # 手机二级菜单.
 navMenu:
@@ -581,7 +600,7 @@ instantpage:
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
 banner:
-  enable: true
+  enable: false
 
 #ICP备案信息尾部显示
 icp:
@@ -631,3 +650,18 @@ bbtime:
  appId: # 你的appId
  appKey: # 你的appKey
  serverURLs: # https://你的api
+
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: false
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+
+highlight:
+  enable: false
