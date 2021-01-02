@@ -441,6 +441,7 @@ baiduPush: true
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
 libs:
   css:
+    note: /css/note.css
     matery: /css/matery.css
     mycss: /css/my.css
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
