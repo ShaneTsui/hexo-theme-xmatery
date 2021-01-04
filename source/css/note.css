@@ -198,7 +198,7 @@
     color: #6f42c1;
 }
 .note.primary:not(.no-icon)::before {
-    content: '\f055';
+    content: '\f044';
 }
 .note.primary:not(.no-icon):not(.modern)::before {
     color: #6f42c1;
