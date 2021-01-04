@@ -237,20 +237,20 @@ myProjects:
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 mySkills:
-  enable: true
+  enable: false
   data:
     Python:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 90%
-      C++:
-        background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-        percent: 70%
-      Guitar Fingerstyle:
-        background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-        percent: 60%
-#    Java:
-#      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-#      percent: 85%
+    C++:
+      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+      percent: 70%
+    Guitar Fingerstyle:
+      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      percent: 60%
+    Java:
+      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+      percent: 70%
 #    JavaScript:
 #      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
 #      percent: 80%
