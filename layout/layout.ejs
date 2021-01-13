@@ -96,7 +96,7 @@
     <% } %>
 
     <% if (theme.ribbon.enable) { %>
-    <% var ribbonSrc = theme.ribbon.clickChange ? theme.libs.js.ribbon : theme.libs.js.ribbonRefresh; %>
+    <% var ribbonSrc = theme.ribbon.clickChange ? url_for(theme.libs.js.ribbon) : url_for(theme.libs.js.ribbonRefresh); %>
     <script type="text/javascript" size="<%- theme.ribbon.size %>" alpha='<%- theme.ribbon.alpha %>'
         zIndex="<%- theme.ribbon.zIndex %>" src="<%- theme.jsDelivr.url %><%- url_for(ribbonSrc) %>" async="async"></script>
     <% } %>
