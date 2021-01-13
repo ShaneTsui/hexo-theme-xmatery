@@ -2,7 +2,7 @@
 var audiosJson = JSON.stringify(site.data.musics);
 %>
 
-<link rel="stylesheet" href="<%- theme.libs.css.aplayer %>">
+<link rel="stylesheet" href="<%- url_for(theme.libs.css.aplayer) %>">
 <div class="music-player">
     <% if (theme.music.showTitle) { %>
         <div class="title center-align">
@@ -16,7 +16,7 @@ var audiosJson = JSON.stringify(site.data.musics);
     </div>
 </div>
 
-<script src="<%- theme.libs.js.aplayer %>"></script>
+<script src="<%- url_for(theme.libs.js.aplayer) %>"></script>
 <script>
     $(function () {
         new APlayer({
@@ -30,7 +30,7 @@ var audiosJson = JSON.stringify(site.data.musics);
             volume: Number('<%- theme.music.volume %>'),
             listFolded: '<%- theme.music.listFolded %>' === 'true',
             listMaxHeight: '<%- theme.music.listMaxHeight %>',
-            audio: JSON.parse('<%- audiosJson %>')
+            audio: JSON.parse('<%- audiosJson %>'),
         });
     });
 </script>
