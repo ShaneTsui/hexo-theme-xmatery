@@ -13,6 +13,13 @@ menu:
   Archives:
     url: /archives
     icon: fas fa-archive
+  Language:
+    icon: fas fa-language
+    children:
+      - name: 简体中文
+        url: /
+      - name: English
+        url: /en
   About:
     url: /about
     icon: fas fa-user-circle
