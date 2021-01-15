@@ -105,7 +105,7 @@ music:
 video:
   enable: false
   showTitle: true
-  title: 精彩视频
+  title: Featured Videos
   url: https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 # 必填
   pic:
   thumbnails:
@@ -142,15 +142,14 @@ favicon: /favicon.png
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  # qq: 1403208112
   github: https://github.com/ShaneTsui/
   email: shanetsui.cs@gmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: #
   weibo: # https://weibo.com/xxx
-  zhihu: # https://www.zhihu.com/xxx
-  rss: true # true、false
+  zhihu: https://www.zhihu.com/people/shanetsui # https://www.zhihu.com/xxx
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -215,8 +214,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Into Programming, Robotics and Guitar Fingerstyle
-  introduction: 不喜欢ACG的程序猿不是好的自动驾驶攻城狮
+  career: SDE @ Amazon
+  introduction: Into Programming, Robotics and Guitar Fingerstyle
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
