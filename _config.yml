@@ -142,15 +142,14 @@ favicon: /favicon.png
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  # qq: 1403208112
   github: https://github.com/ShaneTsui/
   email: shanetsui.cs@gmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: #
   weibo: # https://weibo.com/xxx
-  zhihu: # https://www.zhihu.com/xxx
-  rss: true # true、false
+  zhihu: https://www.zhihu.com/people/shanetsui # https://www.zhihu.com/xxx
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
