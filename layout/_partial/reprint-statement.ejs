@@ -8,8 +8,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-user">
-                        <%= __('author') %>:
                     </i>
+                    <%= __('author') %>:
                 </span>
                 <span class="reprint-info">
                     <a href="<%- url_for('/about') %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
@@ -18,8 +18,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
-                        <%= __('link') %>:
                     </i>
+                    <%= __('link') %>:
                 </span>
                 <span class="reprint-info">
                     <a href="<%- config.url %><%- url_for(page.path) %>"><%- config.url %><%- url_for(page.path) %></a>
@@ -28,8 +28,8 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
             <div class="reprint__notice">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-copyright">
-                        <%= __('reprint') %>:
                     </i>
+                    <%= __('reprint') %>:
                 </span>
                 <span class="reprint-info">
                     <%= __('use') %>
