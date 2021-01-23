@@ -1,0 +1,66 @@
+<style>
+    .paste-box {
+        border-collapse: collapse;
+        border-spacing: 0;
+        min-height: 200px;
+        max-height: 400px;
+        padding: 1rem;
+        position: relative;
+        background: #f0f1f2;
+    }
+
+    .paste-box:empty:after {
+        content: "在这里粘贴表格";
+        font-size: 120%;
+        font-style: italic;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: calc(50% - 1rem)
+    }
+
+    .paste-box td, .paste-box th {
+        background: #fafafa;
+        padding: .5rem .5rem .25rem
+    }
+
+    .paste-box th {
+        background: #313e52;
+        border-color: #313e52;
+        color: #f7f7f7;
+        font-weight: 400;
+        text-align: left;
+        vertical-align: middle
+    }
+
+    .paste-box th a {
+        color: #f7f7f7
+    }
+
+    .paste-box code {
+        background: #3c526a;
+        color: #fafafa;
+        display: inline-block;
+        font-size: 90%;
+        padding: .1rem
+    }
+
+    #table2markdown_editor {
+        overflow-y: auto;
+    }
+</style>
+
+<div id="table2markdown">
+    <div class="title center-align">
+        <i class="far fa-bar-chart"></i>&nbsp;&nbsp;<%- __('table2markdown') %>
+    </div>
+    <div class="center-align">
+        <a href="https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/"><img
+                    src="https://res.cloudinary.com/shanetsui/image/upload/v1611304295/Blog/Images/Software/DevTool/Markdown/Excel2MarkdownTable/copy-excel-paste-markdown_qxaso5.png"
+                    alt="Excel to HTML Converter"></a>
+    </div>
+    <br>
+    <div contenteditable="true" autofocus="autofocus" class="paste-box" spellcheck="false" id="table2markdown_editor"></div>
+</div>
+
+<script src="<%- url_for(theme.libs.js.table2markdown) %>"></script>

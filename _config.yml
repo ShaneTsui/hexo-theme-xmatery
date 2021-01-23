@@ -20,6 +20,9 @@ menu:
         url: /
       - name: English
         url: /en
+  Tools:
+    url: /tools
+    icon: fas fa-tools
   About:
     url: /about
     icon: fas fa-user-circle
@@ -487,6 +490,7 @@ libs:
     instantpage: /libs/instantpage/instantpage.js
     astro404BodyMovin: /libs/astro404/bodymovin.js
     astro404Data: /libs/astro404/data.js
+    table2markdown: /libs/table2markdown/table2markdown.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
