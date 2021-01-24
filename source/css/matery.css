@@ -17,7 +17,7 @@
 @media only screen and (min-width: 993px) {
     .container {
         width: 90%;
-        max-width: 1125px;
+        max-width: 1250px;
     }
 
     .head-container {
@@ -27,9 +27,9 @@
     }
 
     .post-container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        max-width: 1250px;
+        max-width: 1300px;
     }
 }
 
